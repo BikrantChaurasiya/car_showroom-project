@@ -1,0 +1,282 @@
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: name;
+    border: name;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 65.5%;
+
+}
+
+
+
+/*== top section start ==*/
+
+.top-header .out-box{
+    width:100%;
+    background: red;
+}
+.top-header .out-box .inside-box{
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    background-color: #141622;
+    padding: 1rem 0;
+    clip-path: polygon(8% 0%, 92% 0%, 96% 100%, 5% 100%);
+
+}
+
+.out-box .inside-box .col-1 {
+    display:flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center ;
+    color: #fff;
+margin-left: 13rem ;
+}
+
+
+.out-box .insert-box .col-1 span{
+    font-size: 1.5rem;
+}
+
+.out-box .insert-box .col-1 span i{
+    color: var(--main-color);
+    padding-right:0.5;
+    font-size: 1.3rem;
+
+
+}
+
+
+.out-box .inside-box .col-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    margin-right: 13rem;
+}
+.out-box .inside-box .col-2 a,
+.out-box .inside-box .col-2 span,
+.out-box .inside-box .col-2 .social i{
+    color: #fff;
+    font-size:  1.5;
+    transition: 0.4s;
+}
+.out-box .inside-box .col-2 .social{
+    display: flex;
+    gap: 0.9rem;
+}
+
+.out-box .inside-box .col-2 a i{
+    padding-right: 0.5rem;
+
+}
+.out-box .inside-box .col-2 a:hover{
+    color: var(--main-color);
+}
+
+/*=== media query ===*/
+@media(max-width:1150){
+    .out-box .inside-box .col-1{
+        margin-left: 8rem;
+    }
+    .out-box .inside-box .col-2{
+        margin-left: 8rem;
+    }
+}
+/*===navbar section start ===*/
+.header {
+    width: 100%;
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem  9.5%;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(190, 190, 0.5),
+    0 0 10px rgba(190, 190, 190, 0.5);
+    z-index: 111;
+    transition:0.4s ease;
+}
+.header .logo img {
+    width: 200px;
+
+}
+
+.header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.arrivals{
+    text-align: center;
+    padding-top: 7rem;
+
+}
+.arrivals h4{
+    color: red;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+    font-weight: 600;
+
+    font-family:'poppins', sans-serif;
+    letter-spacing: 2px;
+
+
+}
+.arrivals h4 i {
+    padding-right:0.5rem;
+
+}
+.arrivals h1{
+    padding-bottom: 4rem;
+    font-size: 4.7rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: black;
+
+}
+.arrivals h1 span{
+    color:var(black)
+
+}
+.arrivals .arr-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:2.5rem;
+}
+.arr-row .arr-col{
+    padding: 1rem;
+    box-shadow:0 0 5px #646161;
+    background: #fff;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.arr-row.arr-col .image{
+    width: 100%;
+    height: 20rem;
+    overflow:hiddem;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+.arr-row .arr-col .image img{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: 0.5s ease;
+}
+.arr-row .arr-col .image:hover img{
+    transform: scale(1.07,1.1);
+
+}
+.arr-row .arr-col h5{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    color: var(--taxt-color);
+}
+
+
+.arr-row .arr-col .rating{
+    display:flex;
+    gap: 1 rem;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+.arr-col .rating .stars i{
+    color: var(--main-color);
+    font-size: 1.4rem;
+
+}
+
+.arr-col .rating .review span{
+    font-size:1.3rem;
+font-weight:600;
+color:#646161}
+
+.arr-col .features{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap:0.5rem;
+    padding-bottom:0.5rem;
+
+
+}
+
+.arr-col .features span{
+    font-size: 1.4rem;
+    color:#646161;
+
+}
+arr.col .features span i{
+    color:red;
+    padding-right:0.3rem;
+}
+
+.arr-col .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.arr-col .price p{
+    color:var(--main-color);
+    font-size:1.8rem;
+    font-weight:600;
+}
+
+.arr-col .price button{
+    background:blueviolet;
+    padding:0.8rem 2.8rem;
+    color:#fff;
+    border-radius:0.5rem;
+    cursor:pointer;
+    transition:0.3s ease;
+
+    
+}
+.arr-col .price button:hover{
+    background: var(red);
+}
+#home_button{
+    height:20px;
+    width:20px;
+    margin-left: 20px;
+}

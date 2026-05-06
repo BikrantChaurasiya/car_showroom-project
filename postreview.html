@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post review</title>
+</head>
+
+<body>
+    <!--nav bar-->
+    <style>
+        .master-nav ul {
+            display: flex;
+            background: rgb(13, 35, 94);
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        .master-nav ul li {
+            margin-left: 20%;
+            list-style: none;
+            margin: auto;
+            padding: 5px 0px;
+            font-size: 20px;
+
+
+        }
+
+        .master-nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .master-nav ul li a:hover {
+            color: rgb(208, 255, 0);
+
+        }
+
+        #home {
+            width: 25%;
+            margin-right: -10px;
+            background-color: rgb(30, 255, 0);
+            border-radius: 20%;
+            margin: auto;
+
+        }
+
+        #search {
+            width: 400px;
+            height: 40px;
+            border-radius: 5px;
+        }
+
+        #button {
+            width: 70px;
+            height: 40px;
+            background-color: #c3f70ac0;
+            color: rgb(255, 255, 255);
+            border-width: .1px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #button:active {
+            background-color: rgb(0, 110, 255);
+            transition: 0.1s;
+        }
+    </style>
+    <div class="master-nav">
+        <ul>
+            <li><a href="../../index.html"><img src="home.png" id="home"></a></li>
+            <li><a href="../../nav-lbuttons/contact/contact.html">Contact us</a></li>
+            <li><a href="../../nav-lbuttons/help/help.html">Help</a></li>
+            <li><a href="../../card_service/24/24_7.html">Customer-Support</a></li>
+            <li>
+                <div class="search">
+                    <select id="search">
+                        <option selected>Other Srevices</option>
+                        <option>After-Sale Services</option>
+                        <option>Financing</option>
+                        <option>Trade-Ins</option>
+                        <option>Selling Vehicles</option>
+                        <option>Modifications</option>
+                    </select><button id="button">Search</button>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+    <!--nav bar end-->
+
+    <style>
+        .form2 {
+
+            background-position: center;
+            background-position: 110vmax;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            padding: 8px;
+            border-radius: 8px;
+            width: 70%;
+            animation: fadeInUp 1s ease;
+            border-width: 1%;
+            border-style: solid;
+            box-shadow: 10px 10px 10px rgb(73, 28, 28);
+
+
+
+
+        }
+
+        .contact-form {
+            display: flex;
+            margin-left: 24%;
+            margin-top: 3%;
+            width: 70%;
+
+        }
+
+
+
+        .form2 h2 {
+            text-align: center;
+            font-size: 30px;
+            text-decoration: underline rgb(255, 125, 3);
+            color: rgb(0, 0, 0);
+
+
+
+
+
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        #email_p {
+            color: white;
+            font-size: 20px;
+            background: black;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: lighter;
+            margin-bottom: 5px;
+            color: rgb(0, 0, 0);
+
+            font-size: 17px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        .form-group button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 30%;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 15%;
+        }
+
+        .form-group button:hover {
+            background-color: #0026ff;
+            transition: 1s;
+
+
+        }
+
+        .fbackbutton {
+            display: flex;
+
+        }
+
+        .fbackbutton .form-group {
+            flex: 1;
+        }
+    </style>
+
+
+
+
+    <div class="contact-form">
+
+
+        <div class="form2">
+            <!--<img src="./headset.png" >-->
+
+            <h2>Post a review</h2>
+            <form action="https://fabform.io/f/xxxxx" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder=" Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Mail@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phno">phone no:</label>
+                    <input type="phone number" id="phno" name="phno" placeholder="Enter your contact number" required>
+                </div>
+                <div class="form-group">
+                    <label for="message"></label>
+                    <textarea id="message" name="message" rows="4" placeholder="Review section..." required></textarea>
+                </div>
+                <div class="fbackbutton">
+                    <div class="form-group">
+                        <button type="Submit" onclick="alert('Registered Successfully')">Submit</button>
+                    </div>
+                    <div class="form-group">
+                        <button type="reset">Reset</button>
+
+
+                    </div>
+
+                </div>
+                            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

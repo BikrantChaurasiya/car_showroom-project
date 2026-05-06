@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    min-height: 100vh;  /*for full screen display*/
+    width: 100%;
+    background-image: linear-gradient(45deg, green, red);
+    background-size: cover;
+    background-position: center;
+    position: relative;              /*relative to the window*/
+
+}
+
+nav {
+    background-color: brown;
+    display: flex;  /*allow to manupulate element within container*/
+    padding: 2% 6%;
+    justify-content: space-between; /* space bte contents*/
+    align-items: center;
+
+}
+
+.nav_links {
+    flex: 1;               /*equla size inside the container*/
+    text-align: right;
+
+}
+
+.nav_links ul li {
+    list-style: none;
+    display: inline-block;        /*help to bring all nav name in one line*/
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav_links ul li a {
+    color: white;
+    text-decoration: none; /*remove link blue color*/
+    font-size: 13px;
+    font-style: italic;
+}
+
+.nav_links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: yellow; /*color of the animatio of nav element*/
+    display: block;
+    margin: auto;
+    transition: 0.1s; /*regulates animation speed 0-1 ,0.1 is fastest and 0.9 slowest*/
+
+}
+
+.nav_links ul li:hover::after {
+    width: 100%; /*after hover with to full*/
+}
